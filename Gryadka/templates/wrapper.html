@@ -1,0 +1,118 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Грядка-Family</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.css' %}" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="{% static '/bootstrap/js/bootstrap.js' %}"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <!-- Roboto font  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+    <!-- Bootstrap Greed -->
+    <script src="{% static '/Bgreed.js' %}"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Название сайта</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/">Page 1
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/">Page 1-1</a></li>
+                        <li><a href="/">Page 1-2</a></li>
+                        <li><a href="/">Page 1-3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock content %}
+
+    <footer>
+        <!-- FOOTER TOP -->
+        <div class="ft-top">
+            <div class="container">
+                <div class="ft-top-wrapper">
+                    <div class="ft-logo">
+                        <a href="index.html">
+                            <img src="/static/images/logo_new_for_black2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="row justify-content-between justify-content-xl-start">
+                        <div class="col-md-3 ft-col">
+                            <h6>About Us</h6>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium, totam rem
+                                aperiam,</p>
+                        </div>
+                        <div class="col-md-6  col-xl-4 offset-xl-1 ft-col">
+                            <h6>Get news & offers</h6>
+                            <form method="get">
+                                <div class="form-inner">
+                                    <input type="text" placeholder="Enter your mail">
+                                    <button>
+                                        <span class="lnr lnr-envelope"></span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="social">
+                                <a href="#">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ft-col">
+                            <h6>Contact Us</h6>
+                            <p>+ (156) 1800-366-6666</p>
+                            <p>Eric-82@example.com</p>
+                            <p>www.royate.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bot">
+            <div class="container">
+                @ 2018 DesignGalaxy8. Get The Theme			
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
