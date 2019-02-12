@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Грядка-Family</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.css' %}" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="{% static '/bootstrap/js/bootstrap.js' %}"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <!-- Roboto font  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+    <!-- Bootstrap Greed -->
+    <script src="{% static '/Bgreed.js' %}"></script>
+
+</head>
+
+<body>
+
+{% block homePage %}
+{% endblock homePage %}
+
+
+</body>
+</html>
